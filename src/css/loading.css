@@ -1,3 +1,9 @@
+html,
+body {
+  font-family: 'Poppins', Arial;
+  background-color: rgb(35, 35, 35);
+}
+
 img {
     position: absolute;
     width: 400px;
