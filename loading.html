@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loading...</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/css/loading.css">
+    <link rel="icon" type="image/x-icon" href="./src/icon.ico">
+  </head>
+  <body>
+    <div>
+      <img class="background" src="./src/image/loading-bar-invert.png">
+    </div>
+    <div>
+      <img class="background load" src="./src/image/loading-bar.png">
+    </div>
+  </body>
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const short_code = urlParams.get('target')
+
+    function redirect(){
+        setTimeout(function() {
+            if (short_code !== null || short_code !== "") {
+                window.location.replace("./home/")
+            } else {
+                window.location.replace("./home/")
+            }
+        }, 6000);
+    }
+
+    window.onload = redirect()
+  </script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index | Project</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="./src/icon.ico">
+    </head>
+    <body style="background-color: black;">
+        <video class="vidbg" src="./src/video/title.mp4" autoplay muted loop>
+    </body>
+    <script>
+        function redirect(){
+        setTimeout(function() {
+            window.location.replace("./loading.html?t=home")
+        }, 2000);
+    }
+        window.onload = redirect();
+    </script>
+</html>

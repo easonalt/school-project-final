@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Silkscreen&display=swap');
+
+html,
+body {
+  font-family: 'Poppins', Arial;
+  background-image: url("./src/image/background.jpg");
+  background-color: rgb(35, 35, 35);
+  background-size: 100%;
+}
+
+
+
+.vidbg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
